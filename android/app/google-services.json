@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "826817699178",
+    "firebase_url": "https://mezcreen-default-rtdb.firebaseio.com",
     "project_id": "mezcreen",
     "storage_bucket": "mezcreen.appspot.com"
   },
@@ -29,6 +30,13 @@
             {
               "client_id": "826817699178-stkqr8ir6b6o1fsej9vl81r8bev42ti0.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "826817699178-lvnvgl66v70acsa7p0i6dc80ik6hpjm7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mezcreen"
+              }
             }
           ]
         }

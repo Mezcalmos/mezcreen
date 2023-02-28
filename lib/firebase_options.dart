@@ -25,7 +25,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -49,6 +52,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '826817699178',
     projectId: 'mezcreen',
     authDomain: 'mezcreen.firebaseapp.com',
+    databaseURL: 'https://mezcreen-default-rtdb.firebaseio.com',
     storageBucket: 'mezcreen.appspot.com',
   );
 
@@ -57,6 +61,7 @@ class DefaultFirebaseOptions {
     appId: '1:826817699178:android:03a5c2a500b1770ee6d913',
     messagingSenderId: '826817699178',
     projectId: 'mezcreen',
+    databaseURL: 'https://mezcreen-default-rtdb.firebaseio.com',
     storageBucket: 'mezcreen.appspot.com',
   );
 
@@ -65,16 +70,7 @@ class DefaultFirebaseOptions {
     appId: '1:826817699178:ios:01e7e8263ba9e64be6d913',
     messagingSenderId: '826817699178',
     projectId: 'mezcreen',
-    storageBucket: 'mezcreen.appspot.com',
-    iosClientId: '826817699178-lvnvgl66v70acsa7p0i6dc80ik6hpjm7.apps.googleusercontent.com',
-    iosBundleId: 'com.example.mezcreen',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCgIiyeh4p1_l9kXVLVePYN9GWiYTksmYw',
-    appId: '1:826817699178:ios:01e7e8263ba9e64be6d913',
-    messagingSenderId: '826817699178',
-    projectId: 'mezcreen',
+    databaseURL: 'https://mezcreen-default-rtdb.firebaseio.com',
     storageBucket: 'mezcreen.appspot.com',
     iosClientId: '826817699178-lvnvgl66v70acsa7p0i6dc80ik6hpjm7.apps.googleusercontent.com',
     iosBundleId: 'com.example.mezcreen',
